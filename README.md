@@ -28,10 +28,6 @@ EndModule1/
 - CSS3 (Flexbox, Media Queries)
 - No JavaScript
 
-## 📸 Screenshots
-
-![Desktop View](img/screenshot-desktop.png)
-
 ## 📬 Contact
 
 Created by **@ThanhluanGif** — feel free to reach out!
