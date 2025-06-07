@@ -19,6 +19,7 @@ header {
   align-items: center;
   padding: 20px 190px;
   background-color: #fff6f6;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -30,6 +31,7 @@ header {
   list-style: none;
   display: flex;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .navbar a {
@@ -48,6 +50,7 @@ header {
   display: flex;
   align-items: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .login a {
@@ -79,12 +82,14 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0px 0px 190px;
+  padding: 20px 190px;
+  flex-wrap: wrap;
 }
 
 /* Text Section */
 .hero-text {
-  max-width: 50%;
+  max-width: 100%;
+  flex: 1;
 }
 
 .hero-text h4 {
@@ -134,31 +139,12 @@ header {
 
 /* Image Section */
 .hero-image img {
-  width: 704px;
-  max-width: 100%;
-  height: 682px;
+  width: 100%;
+  max-width: 704px;
+  height: auto;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-text, .hero-image {
-    max-width: 100%;
-    padding: 20px 0;
-  }
-}
-
-/* Package Section slide 2 */
-
+/* Package Section */
 .package-section {
   display: flex;
   align-items: center;
@@ -169,10 +155,9 @@ header {
 }
 
 .package-image img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 508px;
   height: auto;
-  width: 508px;
-  height: 549px;
 }
 
 .package-content {
@@ -208,10 +193,9 @@ header {
   font-weight: 500;
 }
 
-/* Package Cards */
+/* Team Section */
 .team-section {
   padding: 150px 10%;
-  text-align: center;
   background-color: #ffffff;
 }
 
@@ -244,9 +228,11 @@ header {
 .team-card {
   background-color: #f9f9f9;
   border-radius: 20px;
-  width: 220px;
+  width: 100%;
+  max-width: 220px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   transition: transform 0.3s ease;
+  margin: auto;
 }
 
 .team-card:hover {
@@ -277,8 +263,8 @@ header {
   cursor: pointer;
 }
 
-
-/* Footer */.site-footer {
+/* Footer */
+.site-footer {
   background-color: #f9f9f9;
   padding: 60px 10%;
   color: #333;
@@ -335,4 +321,80 @@ header {
   width: 24px;
   margin-left: 16px;
   cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  header,
+  .container,
+  .package-section,
+  .footer-top,
+  .team-members {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-text,
+  .package-content,
+  .hero-image,
+  .package-image {
+    max-width: 100%;
+    padding: 20px 0;
+  }
+
+  .hero-text h1,
+  .package-content h2,
+  .team-section h2 {
+    font-size: 32px;
+  }
+
+  .footer-column {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .team-card {
+    width: 100%;
+    max-width: 300px;
+    margin: auto;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .footer-column ul li {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1,
+  .package-content h2 {
+    font-size: 24px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .join-btn {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+
+  .team-members {
+    gap: 40px;
+  }
 }
