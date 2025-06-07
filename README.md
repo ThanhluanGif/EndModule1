@@ -1,4 +1,4 @@
-# 🌱 EndModule1 - Education Landing Page
+![image](https://github.com/user-attachments/assets/1deba37e-b1a7-4fe8-a71a-97ffb455b253)# 🌱 EndModule1 - Education Landing Page
 
 This is a responsive landing page project built using only **HTML** and **CSS**, designed as the final project for Module 1. It showcases a modern, clean layout for an educational platform.
 
@@ -13,10 +13,6 @@ EndModule1/
 ├── style.css
 ├── img/
 │ ├── (all images used in the site)
-
-markdown
-Copy
-Edit
 
 ## 💡 Features
 
@@ -35,7 +31,6 @@ Edit
 ## 📸 Screenshots
 
 ![Desktop View](img/screenshot-desktop.png)
-![Mobile View](img/screenshot-mobile.png)
 
 ## 📬 Contact
 
